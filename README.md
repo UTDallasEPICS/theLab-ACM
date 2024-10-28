@@ -25,6 +25,13 @@ GND - GND
 *NOTE*
 Connect the IO0 pin of ESP32-CAM to common ground to enter flash mode. This allows to upload code to ESP32-CAM. Disconnect it after the code has been uploaded.
 
+CAM -> LEDs
+
+IO15 - GreenLED (anode)
+
+IO14 - RedLED (anode)
+
+Both cathodes are connected to GND (through a 330 ohm resistor)
 
 **ESP-WROOM-32**
 Run the "esp32-receive.ino" on ESP32 with the board selected as "ESP32-WROOM-DA Module" on Arduino IDE.
@@ -34,7 +41,7 @@ The connections are as follows:
 
 ESP32 -> CAM
 
-IO16 - IO012
+IO19 - IO012  (UART 1)
 
 GND - GND
 
